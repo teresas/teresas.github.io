@@ -1,48 +1,84 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 body {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 1.15;
 	color: #333;
 	font-weight: 500;
+	display: flex;
+	flex-direction: column;
 }
 h1 {
 	font-size: 3em;
-	font-weight: 700;
+	font-weight: 300;
+	margin: 1rem;
+	color: #aaa;
 }
 a {
 	color: #0C7ACA;
 }
-main {
+.container {
 	margin: 0 auto;
-	max-width: 1150px;
+	max-width: 1250px;
 	position: relative;
-	height: 100%;
 }
 #content {
-	margin: 1em 1em 3em;
+	margin: 2em;
 }
 #portrait {
 	max-width: 100%;
 	height: auto;
 }
+header,footer {
+	background-color: #050505;
+	padding: 1em;
+}
+footer {
+	color: #555;
+	flex-grow: 1;
+	font-size: .8em;
+}
 @media (min-width: 500px) {
 	#content {
 		margin: 2em;
 	}
+	footer {
+		padding: 2em;
+	}
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
+	header, footer {
+		padding: 0;
+	}
 	h1 {
 		font-size: 5em;
+		margin: 2rem 4rem;
+	}
+	main > .container {
+		background: url('portrait.png') no-repeat top 1em left 22em;
+		height: 820px;
 	}
 	#portrait {
+		display: none;
+	}
+	#content {
 		position: absolute;
-		left: 22em;
-		bottom: 0;
-		z-index: -1;
+		margin: 4em;
+		padding: 0;
+	}
+	footer > .container {
+		padding: 1rem 4rem;
 	}
 }
