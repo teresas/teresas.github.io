@@ -23,7 +23,7 @@ body {
 h1 {
 	font-size: 3em;
 	font-weight: 300;
-	margin: 1rem;
+	margin: 2rem;
 	color: #aaa;
 }
 a {
@@ -43,25 +43,16 @@ a {
 }
 header,footer {
 	background-color: #050505;
-	padding: 1em;
 }
 footer {
 	color: #555;
 	flex-grow: 1;
 	font-size: .8em;
 }
-@media (min-width: 500px) {
-	#content {
-		margin: 2em;
-	}
-	footer {
-		padding: 2em;
-	}
+footer > .container {
+	padding: 1rem 2rem;
 }
 @media (min-width: 900px) {
-	header, footer {
-		padding: 0;
-	}
 	h1 {
 		font-size: 5em;
 		margin: 2rem 4rem;
