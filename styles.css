@@ -1,0 +1,48 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1.15;
+	color: #333;
+	font-weight: 500;
+}
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+}
+a {
+	color: #0C7ACA;
+}
+main {
+	margin: 0 auto;
+	max-width: 1150px;
+	position: relative;
+	height: 100%;
+}
+#content {
+	margin: 1em 1em 3em;
+}
+#portrait {
+	max-width: 100%;
+	height: auto;
+}
+@media (min-width: 500px) {
+	#content {
+		margin: 2em;
+	}
+}
+@media (min-width: 800px) {
+	h1 {
+		font-size: 5em;
+	}
+	#portrait {
+		position: absolute;
+		left: 22em;
+		bottom: 0;
+		z-index: -1;
+	}
+}
