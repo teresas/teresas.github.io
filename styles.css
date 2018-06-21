@@ -45,7 +45,7 @@ header,footer {
 	background-color: #050505;
 }
 footer {
-	color: #555;
+	color: #777;
 	flex-grow: 1;
 	font-size: .8em;
 }
