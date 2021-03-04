@@ -7,6 +7,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+:focus {
+	outline: solid #ff5722;
+	outline-offset: .25em;
+}
 html, body {
 	height: 100%;
 	margin: 0;
