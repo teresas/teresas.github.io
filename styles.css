@@ -61,6 +61,7 @@ a .icon {
 #portrait {
 	max-width: 100%;
 	height: auto;
+	margin-bottom: -5px;
 }
 header,footer {
 	background-color: #050505;
